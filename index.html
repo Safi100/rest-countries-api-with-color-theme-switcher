@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="Light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/main.css">
+    <title>rest-countries-api-with-color-theme-switcher</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Where in the world?</h1>
+            <div class="toggle">
+                <span><img class="toggle__icon" src="images/icon-moon.png" alt="toggle icon"></span>
+                <span class="toggle__text">Dark Mode</span>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <nav class="search_and_filter">
+                <div class="search_box">
+                    <img class="search-icon" src="images/search-icon-light.png" alt="search-icon">
+                    <input class="search_country" type="text" placeholder="Search for a country...">
+                </div>
+                <div class="select_region">
+                    <div class="select" id="select">
+                        <p id="select"><span id="select">Filter By Region</span><img id="arrow-icon" class="arrow-icon" src="images/arrow-light.png" alt="arrow"></p>
+                    </div>
+                    <ul class="option" id="option">
+                        <li class="region selected"><span>All</span><img  src="images/checked.png" alt="ckecked icon"></li>
+                        <li class="region"><span>Africa</span></li>
+                        <li class="region"><span>Americas</span></li>
+                        <li class="region"><span>Asia</span></li>
+                        <li class="region"><span>Europe</span></li>
+                        <li class="region"><span>Oceania</span></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="countries-container">
+                <div class="loader">
+                    <div class="battery"></div>
+                </div>
+                <div class="grid">
+                    <!-- From API -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="countryInfoPage">
+        <div class="container">
+            <button class="Back_Btn" style="padding:5px 25px" class="back"><svg class="left_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M1.293,12.707a1,1,0,0,1,0-1.414l5-5A1,1,0,0,1,7.707,7.707L4.414,11H22a1,1,0,0,1,0,2H4.414l3.293,3.293a1,1,0,1,1-1.414,1.414Z"/></svg> Back</button>
+            <div class="country_container"></div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Safi100" target="_blank">Safi Nafi</a>.
+      </div>
+</body>
+</html>
+<script src="app/JavaScript/toggle.js"></script>
+<script src="app/JavaScript/countires.js"></script>
+

@@ -1,0 +1,87 @@
+.countryInfoPage{
+    padding: 150px 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+    .Back_Btn{
+        padding: 5px 25px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        outline: none;
+        border: none;
+        box-shadow:  0px 0px 3px 3px rgba(0 ,0, 0 , 0.03);
+        cursor: pointer;
+        color: inherit;
+        border-radius: 5px;
+        .left_arrow{width: 20px;}
+    }
+}
+.show_country_container{
+    display: block !important;
+}
+.body_after_show{
+    overflow: hidden;
+}
+.country_container{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    .img_container{
+        width: 100%;
+        max-height: 400px;
+        display: flex;
+        img{
+            max-width: 100%;
+            display: block;
+        }
+    }
+    .Country_info_container{
+        width: 100%;
+        align-self: center;
+        .country_name{ margin-bottom: 25px;}
+        span{font-weight: 600;}
+        .info_container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .right,.left{
+                flex-basis: 50%;
+                p{margin-bottom: 10px;}
+            }
+        }
+        .borders_container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            .borders{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                button{
+                    padding: 5px 25px;
+                    border-radius: 3px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .countryInfoPage{
+        overflow-y: scroll;
+        .country_container{
+            flex-direction: column;
+            row-gap: 45px;
+            .info_container{
+                flex-direction: column;
+            }
+        }
+    }
+}

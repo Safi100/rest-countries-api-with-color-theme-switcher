@@ -1,0 +1,140 @@
+.battery{
+    height: 110px;
+    width: 225px;
+    border: 8px solid;
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 12px;
+    margin-top: 150px;
+  }
+  .battery:before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 55px;
+    width: 20px;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 7px 7px 0;
+  }
+  .battery:after{
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 40px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    border-radius: 5px;
+    box-shadow: 50px 0 transparent,
+      100px 0 transparent,
+      150px 0 transparent;
+  }
+
+.Light{
+      .battery{
+            border-color: $Very-Dark-Blue;
+      }
+      .battery::after{
+            background: $Very-Dark-Blue;
+            animation: charge_in_light 1.5s infinite;
+        }
+      .battery:before{
+            background: $Very-Dark-Blue;
+        }
+}
+
+.Dark{
+    .battery{
+        border-color: $White;
+  }
+  .battery::after{
+        background: $White;
+        animation: charge_in_dark 1.5s infinite;
+    }
+  .battery:before{
+        background: $White;
+    }
+}
+
+@keyframes charge_in_dark{
+    22%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    25%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    47%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    50%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 #ffffff,
+        150px 0 transparent;
+    }
+    72%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 #ffffff,
+        150px 0 transparent;
+    }
+    75%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 #ffffff,
+        150px 0 #ffffff;
+    }
+    95%{
+      box-shadow: 50px 0 #ffffff,
+        100px 0 #ffffff,
+        150px 0 #ffffff;
+    }
+}
+
+@keyframes charge_in_light{
+    22%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    25%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    47%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 transparent,
+        150px 0 transparent;
+    }
+    50%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 $Very-Dark-Blue,
+        150px 0 transparent;
+    }
+    72%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 $Very-Dark-Blue,
+        150px 0 transparent;
+    }
+    75%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 $Very-Dark-Blue,
+        150px 0 $Very-Dark-Blue;
+    }
+    95%{
+      box-shadow: 50px 0 $Very-Dark-Blue,
+        100px 0 $Very-Dark-Blue,
+        150px 0 $Very-Dark-Blue;
+    }
+}

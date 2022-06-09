@@ -1,0 +1,121 @@
+// Light
+.Light{
+    body{
+        background: $Light-Mode-Background;
+        .header{
+            background: $White;
+            h1,.toggle__text{color: $Very-Dark-Blue;}
+        }
+        .main{
+            .search_and_filter{
+                .search_box{
+                    background-color: $White;
+                    input[type="text"]::placeholder,input[type="text"]{color: #757575;}
+                }
+                .select_region{
+                    color: $Very-Dark-Blue;;
+                    .select{
+                        background-color: $White;
+                    }
+                    .option{
+                        background-color: $White;
+                        & li:hover{background: #c9c9c9;}
+                    }
+                }
+            }
+            .countries-container{
+                .card{
+                    background: $White;
+                    color: $Very-Dark-Blue;
+                }
+            }
+        }
+        .countryInfoPage{
+            background: $Light-Mode-Background;
+            color: $Very-Dark-Blue;
+            .Back_Btn{
+                box-shadow:  0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+                background-color:$White;
+                .left_arrow{fill: $Very-Dark-Blue;}
+            }
+            .country_container{
+                .Country_info_container{
+                    p{color:#000;}
+                    span{color:$Very-Dark-Blue;}
+                    .borders_container{
+                        .borders{
+                            button{
+                                background-color: $White;
+                                color: $Very-Dark-Blue;
+                                box-shadow:  0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark
+.Dark{
+    body{
+        background: $Dark-Mode-Background;
+        .header{
+            background: $Dark-Mode-Elements;
+            h1,.toggle__text{color: $White;}
+        }
+        .main{
+            .search_and_filter{
+                .search_box{
+                    background-color: $Dark-Mode-Elements;
+                    input[type="text"]::placeholder,input[type="text"]{color: $White;}
+                }
+                .select_region{
+                    color: $White;
+                    .select{
+                        background-color: $Dark-Mode-Elements;
+                    }
+                    .option{
+                        background-color: $Dark-Mode-Elements;
+                        & li:hover{background: #414b57;}
+                    }
+                }
+            }
+            .countries-container{
+                .card{
+                    background: $Dark-Mode-Elements;
+                    color: $White;
+                }
+            }
+        }
+        .countryInfoPage{
+            background: $Dark-Mode-Background;
+            color: $White;
+            .Back_Btn{
+                box-shadow:  0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+                background-color:$Dark-Mode-Elements;
+                .left_arrow{fill: $White;}
+            }
+            .country_container{
+                .Country_info_container{
+                    p{color:#ffffffb3;}
+                    span{color: $White;}
+                    .borders_container{
+                        .borders{
+                            button{
+                                background-color: $Dark-Mode-Elements;
+                                box-shadow:  0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .attribution{
+            color: $White;
+            a{color: red;}
+        }
+    }
+}

@@ -1,0 +1,897 @@
+/*
+ For the icons, you can use a font icon library. Don't worry if the icons that you choose don't look exactly like they do on the design.
+
+ Some suggestions can be found below:
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+.select_region {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 200px;
+  outline: none;
+  border: none;
+  width: 200px;
+  gap: 7px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.select {
+  background: #2b3945;
+  padding: 15px 16px;
+  padding-right: 13px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-box-shadow: 0 7px 6px -4px rgba(9, 9, 9, 0.27);
+          box-shadow: 0 7px 6px -4px rgba(9, 9, 9, 0.27);
+}
+
+.select p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select p span {
+  margin-right: 44px;
+  font-weight: 600;
+}
+
+.select p img {
+  width: 25px;
+  height: 25px;
+}
+
+.option {
+  width: 100%;
+  max-height: 0;
+  -webkit-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  overflow: hidden;
+  border-radius: 5px;
+  position: absolute;
+  top: 60px;
+  z-index: 5;
+}
+
+.option li {
+  list-style: none;
+  height: 100%;
+  padding: 5px 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.option li:last-child {
+  margin: 0;
+}
+
+.show {
+  max-height: 185px;
+  padding: 5px 0;
+  -webkit-transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+.open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+li span {
+  margin-right: 7px;
+}
+
+li img {
+  width: 20px;
+}
+
+.arrow-icon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Light body {
+  background: #fafafa;
+}
+
+.Light body .header {
+  background: white;
+}
+
+.Light body .header h1, .Light body .header .toggle__text {
+  color: #111517;
+}
+
+.Light body .main .search_and_filter .search_box {
+  background-color: white;
+}
+
+.Light body .main .search_and_filter .search_box input[type="text"]::-webkit-input-placeholder, .Light body .main .search_and_filter .search_box input[type="text"] {
+  color: #757575;
+}
+
+.Light body .main .search_and_filter .search_box input[type="text"]:-ms-input-placeholder, .Light body .main .search_and_filter .search_box input[type="text"] {
+  color: #757575;
+}
+
+.Light body .main .search_and_filter .search_box input[type="text"]::-ms-input-placeholder, .Light body .main .search_and_filter .search_box input[type="text"] {
+  color: #757575;
+}
+
+.Light body .main .search_and_filter .search_box input[type="text"]::placeholder, .Light body .main .search_and_filter .search_box input[type="text"] {
+  color: #757575;
+}
+
+.Light body .main .search_and_filter .select_region {
+  color: #111517;
+}
+
+.Light body .main .search_and_filter .select_region .select {
+  background-color: white;
+}
+
+.Light body .main .search_and_filter .select_region .option {
+  background-color: white;
+}
+
+.Light body .main .search_and_filter .select_region .option li:hover {
+  background: #c9c9c9;
+}
+
+.Light body .main .countries-container .card {
+  background: white;
+  color: #111517;
+}
+
+.Light body .countryInfoPage {
+  background: #fafafa;
+  color: #111517;
+}
+
+.Light body .countryInfoPage .Back_Btn {
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+  background-color: white;
+}
+
+.Light body .countryInfoPage .Back_Btn .left_arrow {
+  fill: #111517;
+}
+
+.Light body .countryInfoPage .country_container .Country_info_container p {
+  color: #000;
+}
+
+.Light body .countryInfoPage .country_container .Country_info_container span {
+  color: #111517;
+}
+
+.Light body .countryInfoPage .country_container .Country_info_container .borders_container .borders button {
+  background-color: white;
+  color: #111517;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+}
+
+.Dark body {
+  background: #202c37;
+}
+
+.Dark body .header {
+  background: #2b3945;
+}
+
+.Dark body .header h1, .Dark body .header .toggle__text {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .search_box {
+  background-color: #2b3945;
+}
+
+.Dark body .main .search_and_filter .search_box input[type="text"]::-webkit-input-placeholder, .Dark body .main .search_and_filter .search_box input[type="text"] {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .search_box input[type="text"]:-ms-input-placeholder, .Dark body .main .search_and_filter .search_box input[type="text"] {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .search_box input[type="text"]::-ms-input-placeholder, .Dark body .main .search_and_filter .search_box input[type="text"] {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .search_box input[type="text"]::placeholder, .Dark body .main .search_and_filter .search_box input[type="text"] {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .select_region {
+  color: white;
+}
+
+.Dark body .main .search_and_filter .select_region .select {
+  background-color: #2b3945;
+}
+
+.Dark body .main .search_and_filter .select_region .option {
+  background-color: #2b3945;
+}
+
+.Dark body .main .search_and_filter .select_region .option li:hover {
+  background: #414b57;
+}
+
+.Dark body .main .countries-container .card {
+  background: #2b3945;
+  color: white;
+}
+
+.Dark body .countryInfoPage {
+  background: #202c37;
+  color: white;
+}
+
+.Dark body .countryInfoPage .Back_Btn {
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+          box-shadow: 0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+  background-color: #2b3945;
+}
+
+.Dark body .countryInfoPage .Back_Btn .left_arrow {
+  fill: white;
+}
+
+.Dark body .countryInfoPage .country_container .Country_info_container p {
+  color: #ffffffb3;
+}
+
+.Dark body .countryInfoPage .country_container .Country_info_container span {
+  color: white;
+}
+
+.Dark body .countryInfoPage .country_container .Country_info_container .borders_container .borders button {
+  background-color: #2b3945;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+          box-shadow: 0px 0px 3px 3px rgba(9, 9, 9, 0.13);
+  color: white;
+}
+
+.Dark body .attribution {
+  color: white;
+}
+
+.Dark body .attribution a {
+  color: red;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.attribution {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+select, a, button {
+  cursor: pointer;
+}
+
+.show_card {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide_card {
+  display: none !important;
+}
+
+.battery {
+  height: 110px;
+  width: 225px;
+  border: 8px solid;
+  position: relative;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 12px;
+  margin-top: 150px;
+}
+
+.battery:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 55px;
+  width: 20px;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  border-radius: 0 7px 7px 0;
+}
+
+.battery:after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 40px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 50px 0 transparent, 100px 0 transparent, 150px 0 transparent;
+          box-shadow: 50px 0 transparent, 100px 0 transparent, 150px 0 transparent;
+}
+
+.Light .battery {
+  border-color: #111517;
+}
+
+.Light .battery::after {
+  background: #111517;
+  -webkit-animation: charge_in_light 1.5s infinite;
+          animation: charge_in_light 1.5s infinite;
+}
+
+.Light .battery:before {
+  background: #111517;
+}
+
+.Dark .battery {
+  border-color: white;
+}
+
+.Dark .battery::after {
+  background: white;
+  -webkit-animation: charge_in_dark 1.5s infinite;
+          animation: charge_in_dark 1.5s infinite;
+}
+
+.Dark .battery:before {
+  background: white;
+}
+
+@-webkit-keyframes charge_in_dark {
+  22% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  25% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  47% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  50% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+  }
+  72% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+  }
+  75% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+  }
+  95% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+  }
+}
+
+@keyframes charge_in_dark {
+  22% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  25% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  47% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 transparent, 150px 0 transparent;
+  }
+  50% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+  }
+  72% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 transparent;
+  }
+  75% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+  }
+  95% {
+    -webkit-box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+            box-shadow: 50px 0 #ffffff, 100px 0 #ffffff, 150px 0 #ffffff;
+  }
+}
+
+@-webkit-keyframes charge_in_light {
+  22% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  25% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  47% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  50% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+  }
+  72% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+  }
+  75% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+  }
+  95% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+  }
+}
+
+@keyframes charge_in_light {
+  22% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  25% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  47% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 transparent, 150px 0 transparent;
+  }
+  50% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+  }
+  72% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 transparent;
+  }
+  75% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+  }
+  95% {
+    -webkit-box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+            box-shadow: 50px 0 #111517, 100px 0 #111517, 150px 0 #111517;
+  }
+}
+
+.header {
+  -webkit-box-shadow: 0px -6px 13px black;
+          box-shadow: 0px -6px 13px black;
+  padding: 20px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 555;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .container .logo {
+  font-size: 24px;
+}
+
+.header .container .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.header .container .toggle span {
+  font-weight: 600;
+}
+
+.header .container .toggle span img {
+  display: block;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 400px) {
+  .header .container .logo {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .container .logo {
+    margin-bottom: 15px;
+  }
+}
+
+.main {
+  padding-top: 40px;
+}
+
+.main .search_and_filter {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .search_and_filter > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.main .search_and_filter .search_box {
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 25px;
+  padding-left: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 7px 6px -4px rgba(9, 9, 9, 0.27);
+          box-shadow: 0 7px 6px -4px rgba(9, 9, 9, 0.27);
+}
+
+.main .search_and_filter .search_box img {
+  margin-right: 15px;
+}
+
+.main .search_and_filter .search_box input[type="text"] {
+  height: 100%;
+  padding: 20px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.countries-container {
+  padding-bottom: 40px;
+}
+
+.countries-container .card {
+  width: 100%;
+  max-width: 252px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.countries-container .card img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.countries-container .card a {
+  width: 100%;
+  height: 100%;
+}
+
+.countries-container .card .country_info {
+  font-size: 14px;
+  padding: 10px 20px;
+  padding: 20px 20px 30px 20px;
+}
+
+.countries-container .card .country_info .country_name {
+  margin-bottom: 15px;
+}
+
+.countries-container .card .country_info p {
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  margin: 7px 0px;
+  font-weight: 300;
+}
+
+.countries-container .card .country_info p span {
+  font-weight: 600;
+}
+
+.countries-container .card:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+@media screen and (max-width: 1000px) {
+  .search_and_filter {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search_and_filter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search_and_filter .search_box {
+    margin-bottom: 32px;
+  }
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 64px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    gap: 50px;
+    row-gap: 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid {
+    row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .grid {
+    row-gap: 60px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.countryInfoPage {
+  padding: 150px 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.countryInfoPage .Back_Btn {
+  padding: 5px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  color: inherit;
+  border-radius: 5px;
+}
+
+.countryInfoPage .Back_Btn .left_arrow {
+  width: 20px;
+}
+
+.show_country_container {
+  display: block !important;
+}
+
+.body_after_show {
+  overflow: hidden;
+}
+
+.country_container {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.country_container .img_container {
+  width: 100%;
+  max-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.country_container .img_container img {
+  max-width: 100%;
+  display: block;
+}
+
+.country_container .Country_info_container {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.country_container .Country_info_container .country_name {
+  margin-bottom: 25px;
+}
+
+.country_container .Country_info_container span {
+  font-weight: 600;
+}
+
+.country_container .Country_info_container .info_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.country_container .Country_info_container .info_container .right, .country_container .Country_info_container .info_container .left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.country_container .Country_info_container .info_container .right p, .country_container .Country_info_container .info_container .left p {
+  margin-bottom: 10px;
+}
+
+.country_container .Country_info_container .borders_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.country_container .Country_info_container .borders_container .borders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.country_container .Country_info_container .borders_container .borders button {
+  padding: 5px 25px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  .countryInfoPage {
+    overflow-y: scroll;
+  }
+  .countryInfoPage .country_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 45px;
+  }
+  .countryInfoPage .country_container .info_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=main.css.map */

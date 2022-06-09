@@ -1,0 +1,35 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 64px;
+    justify-items: center;
+
+}
+
+@media screen and (max-width:1150px) {
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .grid{
+        gap: 50px;
+        row-gap: 60px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width:700px) {
+    .grid{
+        row-gap: 60px;
+    }
+}
+@media screen and (max-width:590px) {
+    .grid{
+        row-gap: 60px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
