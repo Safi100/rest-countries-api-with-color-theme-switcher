@@ -15,15 +15,14 @@ function getAllCountries(c){
     document.querySelector('.grid').innerHTML="" // remove after select
     countries = c
     countries.forEach(country => {
-        //console.log(country)
         let country_flag = country.flag
         let country_name = country.name
         let country_population = country.population.toLocaleString("en-US")
         let country_region = country.region
         let country_capital = country.capital
         const displayCountry = `
-        <a class="">
-            <div class="img-div"><img class="country_flag" src="${country_flag}"> </div>
+        <a>
+            <div class="img-div"><img class="country_flag" src="${country_flag} alt="${country_name} flag"> </div>
             <div class="country_info">
                 <h3 class="country_name">${country_name}</h3>
                 <p class="country_population"> <span>Population:</span> ${country_population}</p>
@@ -39,7 +38,6 @@ function getAllCountries(c){
         
         // Search region field
         inputSearch.addEventListener('input',()=>{
-           // inputSearch.value = inputSearch.value ? inputSearch.value.trimStart() : ''; // Prevent space without typing
            inputSearch.value = inputSearch.value.trimStart()
             SearchCountry(card,country_name,inputSearch.value.trim())
         })
@@ -63,7 +61,7 @@ function open_close_menu() {
 
 // Close menu after click on anything otherwise menu
 document.onclick = function(e){
-    if(e.target.id!="option" && e.target.id!="select" && e.target.id!="arrow-icon"){
+    if(e.target.id !="option" && e.target.className !="select-click" && e.target.className!="select" && e.target.id!="arrow-icon"){
         document.querySelector(".option").classList.remove("show");
         document.querySelector(".arrow-icon").classList.remove("open");
     }
