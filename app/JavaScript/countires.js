@@ -22,7 +22,7 @@ function getAllCountries(c){
         let country_capital = country.capital
         const displayCountry = `
         <a>
-            <div class="img-div"><img class="country_flag" src="${country_flag}" alt="${country_name} flag"> </div>
+            <div class="img-div"><img class="country_flag" src="${country_flag}"  alt="${country_name} flag"> </div>
             <div class="country_info">
                 <h3 class="country_name">${country_name}</h3>
                 <p class="country_population"> <span>Population:</span> ${country_population}</p>
